@@ -29,6 +29,29 @@ The following technologies will be implemented in the deliverable:
 
 ### HTML
 - Three HTML pages: login, information about D&D, and general building page
-- Clickable and changeable fields for character creation
+- Clickable and changeable fields for character creation (race, background, class)
 - Text boxes to store a character's name and a brief description
-- 
+
+### CSS
+- Colorful buttons for the changeable fields
+- Adjustment for different screen sizes
+- Consistent and easy on the eyes color scheme
+
+### JavaScript
+- Functionality to change character choices
+- Login and password features
+- Displaying of character/weapon images/icons, other users' sheets
+
+### Web Services
+- Retrieval of other users' character sheets from database
+- Username/password services
+
+### Database
+- Storing of character sheets for later views and edits
+
+### Authentication
+- Required username and password before other services are rendered
+- Ability to create a new account with a different username and password
+
+## Web Sockets
+- Real time notification when others submit character sheets

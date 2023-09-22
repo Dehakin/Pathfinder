@@ -53,5 +53,5 @@ The following technologies will be implemented in the deliverable:
 - Required username and password before other services are rendered
 - Ability to create a new account with a different username and password
 
-## Web Sockets
+### Web Sockets
 - Real time notification when others submit character sheets

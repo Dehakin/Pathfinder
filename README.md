@@ -7,7 +7,7 @@ People have played roleplaying games like Dungeons and Dragons for almost fifty 
 
 ## Design
 
-
+![Mock](StartupSpecs.jpg)
 
 ## Main Features
 

@@ -4,21 +4,134 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="with=device-width, initial-scale=1.0" />
         <title>Pathfinder HTML</title> 
+        <link rel="icon" href="magicmissile.jpeg" />
     </head>
     <body>
         <header>
-            <h1>Pathfinder</h1>
+            <h1>Character Builder</h1>
+            <hr />
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="creator.html">Character Builder</a></li>
                     <li><a href="information.html">Information</a></li>
-                    <li><a href="sheets.html">Available Sheets</a></li>
+                    <li><a href="sheets.html">Community Sheets</a></li>
                 </ul>
+                <hr />
             </nav>
         </header>
+        <main>
+            <li>Strength: 4</li>
+            <li>Dexterity: 2</li>
+            <li>Constitution: 2</li>
+            <li>Intelligence: 0</li>
+            <li>Wisdom: 1</li>
+            <li>Charisma: 0</li>
+
+            <p>
+                <label for="boost1select">Select your first ability boost:</label>
+                <br />
+                <br />
+                <select id="boost1select" name="boost1">
+                    <option selected>Strength</option>
+                    <option>Dexterity</option>
+                    <option>Constitution</option>
+                    <option>Intelligence</option>
+                    <option>Wisdom</option>
+                    <option>Charisma</option>
+                </select>
+            </p>
+            <p>
+                <label for="boost2select">Select your second ability boost:</label>
+                <br />
+                <br />
+                <select id="boost2select" name="boost2">
+                    <option selected>Strength</option>
+                    <option>Dexterity</option>
+                    <option>Constitution</option>
+                    <option>Intelligence</option>
+                    <option>Wisdom</option>
+                    <option>Charisma</option>
+                </select>
+            </p>
+            <hr />
+            
+
+            <div><b>Ancestry</b></div>
+            <label for="ancestryselect">Select an ancestry:</label>
+            <select id="ancestryselect" name="ancestry">
+                <optgroup label="Common">
+                    <option selected>Human</option>
+                    <option>Elf</option>
+                    <option>Dwarf</option>
+                    <option>Gnome</option>
+                    <option>Goblin</option>
+                </optgroup>
+                <optgroup label="Uncommon">
+                    <option>Orc</option>
+                    <option>Kobold</option>
+                    <option>Leshy</option>
+                    <option>Tengu</option>
+                </optgroup>
+                <optgroup label="Rare">
+                    <option>Automaton</option>
+                    <option>Goloma</option>
+                    <option>Skeleton</option>
+                </optgroup>
+            </select>
+            <p>
+                Humans are the most common and varied race in this world, Golarion. Resourceful
+                and quick to learn, they often master things in half the time other races could.
+            </p>
+            <li>Humans gain a +1 bonus to two seperate attributes of your choice, but have no other special abilities.</li>
+            <hr />
+            <div><b>Background</b></div>
+            <label for="backgroundselect">Select a background:</label>
+            <select id="backgroundselect" name="background">
+                <option selected>Artisan</option>
+                <option>Bandit</option>
+                <option>Criminal</option>
+                <option>Farmhand</option>
+                <option>Guard</option>
+                <option>Merchant</option>
+                <option>Noble</option>
+                <option>Refugee</option>
+                <option>Scholar</option>
+                <option>Warrior</option>
+            </select>
+            <p>
+                You've always been good with your hands. Perhaps you identify as a blacksmith,
+                leatherworker, jeweler, or other craftsman, and bring these skills along with
+                you as an adventurer.
+            <br />
+            <li>The Artisan background gives you a +1 bonus to your choice of Strength or Intelligence, and another +1 bonus to another attribute of your choice.</li>
+            <br />
+            <li>It also gives you the Crafting skill and Guild Lore.</li>
+            </p>
+            <hr />
+            <div><b>Class</b></div>
+            <label for="classselect">Select a class:</label>
+            <select id="classselect" name="class">
+                <option selected>Barbarian</option>
+                <option>Bard</option>
+                <option>Cleric</option>
+                <option>Druid</option>
+                <option>Fighter</option>
+                <option>Monk</option>
+                <option>Rogue</option>
+                <option>Sorcerer</option>
+                <option>Wizard</option>
+            </select>
+            <p>Barbarians are tough, instinctual warriors driven by rage. On the battlefield,
+                they rely on devastating close-range attacks and often favor large weapons
+                such as battleaxes and greatswords.
+            </p>
+            <li>Barbarians automatically gain the Athletics skill, a +1 bonus to Strength, and start with 12 hit points + their Constitution.</li>
+
+        </main>
 
         <footer>
+            <hr />
             <span>Zachary Penney</span>
             <br />
             <a href="https://github.com/Dehakin/pathfinder260.git" >GitHub Repository</a>

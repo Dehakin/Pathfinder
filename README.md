@@ -20,7 +20,7 @@ People have played roleplaying games like Dungeons and Dragons for almost fifty 
 - Real-time notifications when other users create their own characters
 - Links to official printable sheets to create physical character sheets
 - A quick tutorial on how to make a character and what each option means
-- An overview of D&D and how to play
+- An overview of TTRPGs and how to play
 - Persistent storing of one's sheets on-server
 
 ## Technologies
@@ -28,7 +28,7 @@ People have played roleplaying games like Dungeons and Dragons for almost fifty 
 The following technologies will be implemented in the deliverable:
 
 ### HTML
-- Three HTML pages: login, information about D&D, and general building page
+- Three HTML pages: login, information about TTRPGs, and general building page
 - Clickable and changeable fields for character creation (race, background, class)
 - Text boxes to store a character's name and a brief description
 
@@ -55,3 +55,15 @@ The following technologies will be implemented in the deliverable:
 
 ### Web Sockets
 - Real time notification when others submit character sheets
+
+## HTML deliverable
+
+Using HTML, I was able to code my web pages to create the basic structure that will support future features.
+
+- **Pages** - Four HTML pages: the homepage, an information page, the character creator itself, and a place to look at other users' characters (structure not complete as of yet).
+- **Links** - Links both to outside sources of information (such as a description of TTRPGs) and to other pages within the site using a common directory.
+- **Text** - Liberal amounts of text to provide information about Pathfinder and to describe each required input.
+- **Images** - Banners present on most pages.
+- **Login** - Basic structure for login on homepage.
+- **Database** - Forms created that will send data about each character sheet to the server to be stored.
+- **WebSocket** - A page entirely dedicated to see other users' character sheets, in real-time (unimplemented as of yet).

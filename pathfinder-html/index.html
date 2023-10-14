@@ -4,37 +4,45 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="with=device-width, initial-scale=1.0" />
         <title>Pathfinder HTML</title> 
+        <link rel="icon" href="magicmissile.jpeg" />
+        <link rel="stylesheet" href="index.css" />
+        <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+        />
     </head>
-    <body>
-        <header>
-            <h1>Pathfinder's Library</h1>
-            <div id="picture" class="picture-box"><img width="400px" src="bannery.jpg" alt="random" /></div>
+    <body class="bg-dark text-light">
+        <header class="container-fluid">
+            <h1 class="librarytitle">
+                <p class="bigtitle">Pathfinder's Library</p>
+            </h1>
             <hr />
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="creator.html">Character Builder</a></li>
-                    <li><a href="information.html">Information</a></li>
-                    <li><a href="sheets.html">Community Sheets</a></li>
-                </ul>
-                <hr />
+            <nav class="navbar fixed-middle">
+            <menu class="navbar nav">
+                    <a class="nav-link" href="index.html">Home</a></li>
+                    <a class="nav-link" href="creator.html">Character Builder</a></li>
+                    <a class="nav-link" href="information.html">Information</a></li>
+                    <a class="nav-link" href="sheets.html">Community Sheets</a></li>
+            </menu>
             </nav>
+            <hr />
         </header>
-        <main>
-            <h1>Welcome to the Pathfinder's Library!</h1>
-            <p>Pathfinder's Library is an easy-to-use tool that allows you to design your own characters for your next TTRPG game!</p>
-            <p>Log in to get started, or click "Information" to learn more!</p>
+        <main class="container-fluid text-center">
+            <h2>Welcome to the Pathfinder's Library!</h2>
+            <p class="description">Pathfinder's Library is an easy-to-use tool that allows you to design your own characters for your next TTRPG game!</p>
+            <p class="description">Log in to get started, or click "Information" to learn more!</p>
             <form method="get" action="creator.html">
                 <label for="name">Enter your username:</label>
+                <br />
                 <input type="text" id="username" placeholder="username here">
                 <button type="submit">Login</button>
             </form>
         </main>
         <footer>
-            <hr />
-            <span>Zachary Penney</span>
-            <br />
-            <a href="https://github.com/Dehakin/pathfinder260.git" >GitHub Repository</a>
+            <span class="name">Zachary Penney</span>
+            <a href="https://github.com/Dehakin/pathfinder260.git" class="nav-link" >GitHub Repository</a>
         </footer>
     </body>
 </html>

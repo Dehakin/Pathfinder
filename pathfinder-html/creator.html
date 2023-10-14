@@ -5,28 +5,35 @@
         <meta name="viewport" content="with=device-width, initial-scale=1.0" />
         <title>Pathfinder HTML</title> 
         <link rel="icon" href="magicmissile.jpeg" />
+        <link rel="stylesheet" href="index.css" />
+        <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+        />
     </head>
-    <body>
-        <header>
-            <h1>Character Builder</h1>
-            <hr />
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="creator.html">Character Builder</a></li>
-                    <li><a href="information.html">Information</a></li>
-                    <li><a href="sheets.html">Community Sheets</a></li>
-                </ul>
-                <hr />
+    <body class="bg-dark text-light">
+        <header class="container-fluid">
+            <h1 class="librarytitle">
+                <p class="bigtitle">Pathfinder's Library</p>
+            </h1>
+            <nav class="navbar fixed-middle">
+            <menu class="navbar nav">
+                    <a class="nav-link" href="index.html">Home</a></li>
+                    <a class="nav-link" href="creator.html">Character Builder</a></li>
+                    <a class="nav-link" href="information.html">Information</a></li>
+                    <a class="nav-link" href="sheets.html">Community Sheets</a></li>
+            </menu>
             </nav>
         </header>
         <main>
-            <li>Strength: 4</li>
-            <li>Dexterity: 2</li>
-            <li>Constitution: 2</li>
-            <li>Intelligence: 0</li>
-            <li>Wisdom: 1</li>
-            <li>Charisma: 0</li>
+            <li class="attributeDisplay">Strength: 4</li>
+            <li class="attributeDisplay">Dexterity: 2</li>
+            <li class="attributeDisplay">Constitution: 2</li>
+            <li class="attributeDisplay">Intelligence: 0</li>
+            <li class="attributeDisplay">Wisdom: 1</li>
+            <li class="attributeDisplay">Charisma: 0</li>
 
             <p>
                 <label for="boost1select">Select your first ability boost:</label>
@@ -104,7 +111,7 @@
                 leatherworker, jeweler, or other craftsman, and bring these skills along with
                 you as an adventurer.
             <br />
-            <li>The Artisan background gives you a +1 bonus to your choice of Strength or Intelligence, and another +1 bonus to another attribute of your choice.</li>
+            <li>The Artisan background gives you a +1 bonus to your choice of Strength or Intelligence, and another +1 bonus to a different attribute of your choice.</li>
             <br />
             <li>It also gives you the Crafting skill and Guild Lore.</li>
             </p>

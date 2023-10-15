@@ -5,7 +5,7 @@
         <meta name="viewport" content="with=device-width, initial-scale=1.0" />
         <title>Pathfinder HTML</title> 
         <link rel="icon" href="magicmissile.jpeg" />
-        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="creator.css" />
         <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -28,12 +28,15 @@
             </nav>
         </header>
         <main>
-            <li class="attributeDisplay">Strength: 4</li>
-            <li class="attributeDisplay">Dexterity: 2</li>
-            <li class="attributeDisplay">Constitution: 2</li>
-            <li class="attributeDisplay">Intelligence: 0</li>
-            <li class="attributeDisplay">Wisdom: 1</li>
-            <li class="attributeDisplay">Charisma: 0</li>
+            <img class="pcportrait" src="human-fighter.jpeg" />
+            <span class="attributeDisplay">Strength: 4</p>
+            <span class="attributeDisplay">Dexterity: 2</p>
+            <span class="attributeDisplay">Constitution: 2</p>
+            <span class="attributeDisplay">Intelligence: 0</p>
+            <span class="attributeDisplay">Wisdom: 1</p>
+            <span class="attributeDisplay">Charisma: 0</p>
+
+            <hr />
 
             <p>
                 <label for="boost1select">Select your first ability boost:</label>
@@ -52,7 +55,7 @@
                 <label for="boost2select">Select your second ability boost:</label>
                 <br />
                 <br />
-                <select id="boost2select" name="boost2">
+                <select class="abcselector" id="boost2select" name="boost2">
                     <option selected>Strength</option>
                     <option>Dexterity</option>
                     <option>Constitution</option>
@@ -64,9 +67,9 @@
             <hr />
             
 
-            <div><b>Ancestry</b></div>
+            <div class="abctitle"><b>Ancestry</b></div>
             <label for="ancestryselect">Select an ancestry:</label>
-            <select id="ancestryselect" name="ancestry">
+            <select class="abcselector" id="ancestryselect" name="ancestry">
                 <optgroup label="Common">
                     <option selected>Human</option>
                     <option>Elf</option>
@@ -92,9 +95,9 @@
             </p>
             <li>Humans gain a +1 bonus to two seperate attributes of your choice, but have no other special abilities.</li>
             <hr />
-            <div><b>Background</b></div>
+            <div class="abctitle"><b>Background</b></div>
             <label for="backgroundselect">Select a background:</label>
-            <select id="backgroundselect" name="background">
+            <select class="abcselector" id="backgroundselect" name="background">
                 <option selected>Artisan</option>
                 <option>Bandit</option>
                 <option>Criminal</option>
@@ -116,9 +119,9 @@
             <li>It also gives you the Crafting skill and Guild Lore.</li>
             </p>
             <hr />
-            <div><b>Class</b></div>
+            <div class="abctitle"><b>Class</b></div>
             <label for="classselect">Select a class:</label>
-            <select id="classselect" name="class">
+            <select class="abcselector" id="classselect" name="class">
                 <option selected>Barbarian</option>
                 <option>Bard</option>
                 <option>Cleric</option>
@@ -132,16 +135,13 @@
             <p>Barbarians are tough, instinctual warriors driven by rage. On the battlefield,
                 they rely on devastating close-range attacks and often favor large weapons
                 such as battleaxes and greatswords.
-            </p>
             <li>Barbarians automatically gain the Athletics skill, a +1 bonus to Strength, and start with 12 hit points + their Constitution.</li>
-
+            </p>
         </main>
 
         <footer>
-            <hr />
-            <span>Zachary Penney</span>
-            <br />
-            <a href="https://github.com/Dehakin/pathfinder260.git" >GitHub Repository</a>
+            <span class="name">Zachary Penney</span>
+            <a href="https://github.com/Dehakin/pathfinder260.git" class="nav-link" >GitHub Repository</a>
         </footer>
     </body>
 </html>

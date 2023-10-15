@@ -2,6 +2,7 @@ body
 {
     display : flex;
     flex-direction: column;
+    text-align: center;
 }
 
 header h1
@@ -10,8 +11,26 @@ header h1
     padding-top:50px;
 }
 
-main span
+.playermadesheet
 {
+    color : red;
+}
+
+.sheetlink
+{
+    color: lightblue;
+}
+
+.timeago
+{
+    color : lightpink;
+}
+
+
+.attributeDisplay
+{
+    display : inline-block;
+    border : purple !important;
 }
 
 
@@ -45,6 +64,11 @@ main
     margin-left: 50px;
     margin-right : 50px;
     margin-bottom : 75px;
+}
+
+main h1
+{
+    margin-bottom : 30px;
 }
 main h2
 {

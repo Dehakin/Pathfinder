@@ -67,3 +67,14 @@ Using HTML, I was able to code my web pages to create the basic structure that w
 - **Login** - Basic structure for login on homepage.
 - **Database** - Forms created that will send data about each character sheet to the server to be stored.
 - **WebSocket** - A page entirely dedicated to see other users' character sheets, in real-time (unimplemented as of yet).
+
+## CSS deliverable
+
+Utilizing CSS stylesheets and Bootstrap resources, I was able to style each page to be much more intuitive and visually appealing.
+
+- **Header** - Each HTML page includes a header with the name of the site and an aesthetically pleasing navigation bar to access each page.
+- **Main Body** - Each page's main body includes its relevant info (such as character details or TTRPG information) styled to be easy to read. Good contrast and use of colors helps distinguish one element from another.
+- **Footer** - Each page also includes a footer with my name and a link to my GitHub repository (which you have already noticed).
+- **Responsiveness** - Each page automatically removes its footer if the view height is too large. Prominent details on each page also dynamically resize when the view is changed.
+- **Elements** - Each page has a designated purpose with unique elements and appropriate placeholders for future content. 
+- **Content** - Text and image content is present throughout all pages.

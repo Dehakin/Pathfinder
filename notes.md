@@ -7,3 +7,28 @@ I got an elastic IP address (50.16.107.84) to use with my running server, which 
 To SSH into my server, I do this command in my console:
 
 ```ssh -i [insert my .pem file here] ubuntu@50.16.107.84```
+
+
+Notes for midterm
+- \# is for an Id
+- . is for a class
+- CSS box:
+   Content (actual stuff), padding (space between content and border), border (colored bit surrounding padding), margin ("elbow room" outside of border between the item and any neighbors
+- You need a certificate on your website to allow HTTPS
+- Port 443: a port computers use to divert network traffic
+- Switch statement syntax:
+  
+  switch(expression) {
+  case x:
+    break;
+  case y:
+    break;
+  default:
+
+}
+
+- Website : https://photos.example.org
+  - "photos" is a subdomain
+  - "example" is the domain name
+  - "org" is the top-level domain
+  - "example.org" is the root domain

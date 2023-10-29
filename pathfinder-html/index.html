@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pathfinder HTML</title> 
         <link rel="icon" href="magicmissile.jpeg" />
         <link rel="stylesheet" href="index.css" />
@@ -12,6 +12,7 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
         />
+        <script src="home.js"></script>
     </head>
     <body class="bg-dark text-light">
         <header class="container-fluid">
@@ -35,7 +36,7 @@
                 <label for="name">Enter your username:</label>
                 <br />
                 <input type="text" id="username" placeholder="username here">
-                <button type="submit">Login</button>
+                <button onclick="login()" type="submit">Login</button>
             </form>
         </main>
         <footer>

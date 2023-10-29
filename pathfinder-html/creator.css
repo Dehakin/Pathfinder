@@ -10,8 +10,18 @@ header h1
     padding-top:50px;
 }
 
+.username
+{
+    position :absolute;
+    margin-top : -60px;
+    margin-left: 30px;
+    text-align : center;
+    color : lightblue;
+    font-size: 25px;
+}
 
-.pcportrait
+
+#pcportrait
 {
     float: right;
     width : 150px;

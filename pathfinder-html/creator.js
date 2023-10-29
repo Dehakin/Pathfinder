@@ -175,7 +175,6 @@ class Creator {
         changeAncestry() {
             const newAncestry = document.getElementById("ancestryselect").value;
             this.ancestry = ancestryData[newAncestry];
-            console.log("Changed ancestry to " + this.ancestry["name"]);
 
             const photo = this.ancestry["image"];
             setPhoto(photo);

@@ -10,6 +10,13 @@ header h1
     padding-top:50px;
 }
 
+main span
+{
+    display : flex;
+    flex-direction : column;
+    margin-top: 10px;
+}
+
 .username
 {
     position :absolute;

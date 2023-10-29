@@ -27,6 +27,7 @@ const classData = {
 
 const backgroundData = {
     "Artisan" : {
+        name : "Artisan",
         boost1 : "Strength",
         boost2 : "Intelligence",
         skill : "Crafting",
@@ -34,6 +35,7 @@ const backgroundData = {
         description: "The Artisan background gives you a +1 bonus to your choice of Strength or Intelligence, another +1 bonus to a different attribute of your choice, and the Crafting skill."
     },
     "Criminal" : {
+        name : "Crimina;",
         boost1 : "Dexterity",
         boost2 : "Charisma",
         skill : "Deception",
@@ -41,6 +43,7 @@ const backgroundData = {
         description : ""
     },
     "Farmhand" : {
+        name : "Farmhand",
         boost1 : "Strength",
         boost2 : "Wisdom",
         skill : "Athletics",
@@ -48,6 +51,7 @@ const backgroundData = {
         description : ""
     },
     "Scholar" : {
+        name : "Scholar",
         boost1 : "Wisdom",
         boost2 : "Intelligence",
         skill : "Arcana",
@@ -58,18 +62,22 @@ const backgroundData = {
 
 const ancestryData = {
     "Human" : {
+        name : "Human",
         flavorText : "Humans are the most common and varied race in this world, Golarion. Resourceful and quick to learn, they often master things in half the time other races could.",
         image : "assets/human-fighter.jpeg"
     },
     "Elf" : {
+        name : "Elf",
         flavorText : "",
         image : "assets/elven-fighter.jpeg"
     },
     "Dwarf" : {
+        name : "Dwarf",
         flavorText : "",
         image : "assets/dwarf.jpeg"
     },
     "Orc" : {
+        name : "Orc",
         flavorText : "",
         image : "assets/orc.jpeg"
     }
@@ -125,12 +133,12 @@ class Creator {
         }
 
         showAttributes() {
-            document.getElementById("mstr").textContent = this.strength;
-            document.getElementById("mdex").textContent = this.dexterity;
-            document.getElementById("mcon").textContent = this.constitution;
-            document.getElementById("mint").textContent = this.intelligence;
-            document.getElementById("mwis").textContent = this.wisdom;
-            document.getElementById("mcha").textContent = this.charisma;
+            document.getElementById("mstr").textContent = "Strength: " + this.strength;
+            document.getElementById("mdex").textContent = "Dexterity: " + this.dexterity;
+            document.getElementById("mcon").textContent = "Constitution: " + this.constitution;
+            document.getElementById("mint").textContent = "Intelligence: " + this.intelligence;
+            document.getElementById("mwis").textContent = "Wisdom: " + this.wisdom;
+            document.getElementById("mcha").textContent = "Charisma: " + this.charisma;
         }
 
 
@@ -139,24 +147,38 @@ class Creator {
             const classBoost = classData[this.pClass["name"]]["boost"];
             this.incrementAttribute(classBoost);
 
-            const free1 = document.getElementById("#boost1select").value;
+            const free1 = document.getElementById("boost1select").value;
             this.incrementAttribute(free1);
-            const free2 = document.getElementById("#boost2select").value;
+            const free2 = document.getElementById("boost2select").value;
             this.incrementAttribute(free2);
 
-            const background1 = document.getElementById("#backgroundselect").value;
+            const background1 = document.getElementById("backgroundselect").value;
             this.incrementAttribute(background1);
 
-            const background2 = document.getElementById("#backgroundselect2").value;
+            const background2 = document.getElementById("backgroundselect2").value;
             this.incrementAttribute(background2);
             
 
-            showAttributes();
+            this.showAttributes();
             
         }
 
         setAttributeVal (attributeElement, val) {
             attributeElement.textContent = val;
+        }
+
+        changeClass() {
+            const newClass = document.getElementById("classselect").value;
+            this.pClass = classData[newClass];
+        }
+
+        changeAncestry() {
+            const newAncestry = document.getElementById("ancestryselect").value;
+            this.ancestry = ancestryData[newAncestry];
+            console.log("Changed ancestry to " + this.ancestry["name"]);
+
+            const photo = this.ancestry["image"];
+            setPhoto(photo);
         }
 
     

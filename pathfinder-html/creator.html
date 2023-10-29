@@ -31,15 +31,14 @@
         </header>
         <main>
             <img  id="pcportrait" src="assets/human-fighter.jpeg" />
-            <span id="mstr" class="attributeDisplay">Strength: 4</p>
-            <span id="mdex" class="attributeDisplay">Dexterity: 2</p>
-            <span id="mcon" class="attributeDisplay">Constitution: 2</p>
-            <span id="mint" class="attributeDisplay">Intelligence: 0</p>
-            <span id="mwis" class="attributeDisplay">Wisdom: 1</p>
-            <span id="mcha" class="attributeDisplay">Charisma: 0</p>
+            <span id="mstr" class="attributeDisplay">Strength: 4</span>
+            <span id="mdex" class="attributeDisplay">Dexterity: 2</span>
+            <span id="mcon" class="attributeDisplay">Constitution: 2</span>
+            <span id="mint" class="attributeDisplay">Intelligence: 0</span>
+            <span id="mwis" class="attributeDisplay">Wisdom: 1</span>
+            <span id="mcha" class="attributeDisplay">Charisma: 0</span>
 
             <hr />
-            <button onclick="setPhoto()"></button>
 
             <p>
                 <label for="boost1select">Select your first ability boost:</label>
@@ -71,7 +70,7 @@
                 <label for="boost3select">Select your first background ability boost:</label>
                 <br />
                 <br />
-                <select onchange="c.updateAttributes()" class="abcselector" id="backgroundSelect" name="boost3">
+                <select onchange="c.updateAttributes()" class="abcselector" id="backgroundselect" name="boost3">
                     <option selected>Strength</option>
                     <option>Intelligence</option>
                 </select>
@@ -80,7 +79,7 @@
                 <label for="boost4select">Select your second free background ability boost:</label>
                 <br />
                 <br />
-                <select onchange="c.updateAttributes()" class="abcselector" id="backgroundSelect2" name="boost3">
+                <select onchange="c.updateAttributes()" class="abcselector" id="backgroundselect2" name="boost3">
                     <option value="Strength" id="str3" selected>Strength</option>
                     <option value="Dexterity" id="dex3">Dexterity</option>
                     <option value="Constitution" id="con3">Constitution</option>
@@ -94,7 +93,7 @@
 
             <div class="abctitle"><b>Ancestry</b></div>
             <label for="ancestryselect">Select an ancestry:</label>
-            <select class="abcselector" id="ancestryselect" name="ancestry">
+            <select onchange="c.changeAncestry()" class="abcselector" id="ancestryselect" name="ancestry">
                 <optgroup label="Common">
                     <option selected>Human</option>
                     <option>Elf</option>
@@ -129,7 +128,7 @@
             <hr />
             <div class="abctitle"><b>Class</b></div>
             <label for="classselect">Select a class:</label>
-            <select class="abcselector" id="classselect" name="class">
+            <select onchange="c.changeClass()" class="abcselector" id="classselect" name="class">
                 <option selected>Barbarian</option>
                 <option>Cleric</option>
                 <option>Rogue</option>

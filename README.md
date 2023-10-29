@@ -78,3 +78,11 @@ Utilizing CSS stylesheets and Bootstrap resources, I was able to style each page
 - **Responsiveness** - Each page automatically removes its footer if the view height is too large. Prominent details on each page also dynamically resize when the view is changed.
 - **Elements** - Each page has a designated purpose with unique elements and appropriate placeholders for future content. 
 - **Content** - Text and image content is present throughout all pages.
+
+## JavaScript deliverable
+
+Implementation of JavaScript allowed me to introduce key elements that allow the webpage to react to user choices.
+
+- **Local Storage** - The home page allows the user to input their username into local storage, which is displayed on the main creator page.
+- **Ability Score Calculation** - After the user modifies one of their character choices, JavaScript automatically recalculates the totals for each ability score and instantly displays it.
+- **Dynamic Images** - Once the user changes their ancestry, the photo representing their character is automatically replaced with an image reflecting their new choice.

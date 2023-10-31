@@ -32,3 +32,20 @@ Notes for midterm
   - "example" is the domain name
   - "org" is the top-level domain
   - "example.org" is the root domain
+ 
+- div p	Selects all p elements inside div elements
+- p ~ ul	Selects every ul element that is preceded by a p element
+- div + p	Selects the first p element that is placed immediately after div elements
+- div > p	Selects all p elements where the parent is a div element
+
+- Default displays
+  - Span : none
+  - P : block
+  - Div : block
+ 
+- Other HTML things
+  - Ordered list: ol
+  - Unordered list : li
+  - Headings : h1 (first leve) ... h6 (sixth and lowest level)
+  - Setting doctype: <!DOCTYPE html> (must be done at top of every HTML doc)
+  - Images : <img src="example.jpeg"">

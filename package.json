@@ -1,0 +1,17 @@
+{
+  "name": "pathfinder260",
+  "version": "1.0.0",
+  "description": "People have played roleplaying games like Dungeons and Dragons for almost fifty years now. Livelihoods are built around it, fans watch hours-long streams of their favorite games, and even dress up when they excitedly play in their own games with their friends. Naturally, when these people want to share their characters they spend hours dreaming of and building! This is where the D&D QuickShare app comes in, in minutes, you can quickly make a character and share it with buddies to give them an idea of how your ideas come to together in a super cool concept!",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.9.0"
+  }
+}

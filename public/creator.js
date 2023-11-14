@@ -179,10 +179,38 @@ class Creator {
             const photo = this.ancestry["image"];
             setPhoto(photo);
         }
+        async exportCharacter() {
+            
+            const response = await fetch('/api/sheets');
+            const sheets = await response.json();
 
-    
+            const ancestry = this.ancestry;
+            const background = this.background;
+            const pClass = this.pClass;
 
+            let scores = []
 
+            scores.push(this.strength);
+            scores.push(this.dexterity);
+            scores.push(this.constitution);
+            scores.push(this.intelligence);
+            scores.push(this.wisdom);
+            scores.push(this.charisma);
+        
+
+            const username = localStorage.getItem('username');
+
+            const toExport = { 'username' : username,
+                'ancestry' : ancestry,
+                'background' : background,
+                'class' : pClass,
+                'scores' : scores
+            };
+
+            sheets.push(toExport);
+        }
+
+        
     }
 
 const c = new Creator;

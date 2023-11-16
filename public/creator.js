@@ -95,8 +95,6 @@ class Creator {
     background;
     pClass;
 
-    skills;
-
     strength;
     dexterity;
     constitution;
@@ -105,13 +103,27 @@ class Creator {
     charisma;
 
     constructor() {
-        this.skills = [];
         this.ancestry = ancestryData["Human"];
         this.background = backgroundData["Artisan"];
         this.pClass = classData["Barbarian"];
 
         const usernameElement = document.querySelector('.username');
         usernameElement.textContent = localStorage.getItem('username') ?? "Unknown Player";
+        }
+
+        loadCharacter(sheet) {
+            this.ancestry = ancestryData[sheet['ancestry']];
+            this.background = backgroundData[sheet['background']];
+            this.class = classData[sheet['class']];
+
+            const scores = sheet['scores'];
+
+            this.strength = scores[0];
+            this.dexterity = scores[1];
+            this.constitution = scores[2];
+            this.intelligence = scores[3];
+            this.wisdom = scores[4];
+            this.charisma = scores[5];
         }
 
         resetAttributes() {
@@ -200,17 +212,22 @@ class Creator {
 
             const username = localStorage.getItem('username');
 
-            const toExport = { 'username' : username,
-                'ancestry' : ancestry,
-                'background' : background,
-                'class' : pClass,
+            const toExport = { 
+                'username' : username,
+                'ancestry' : ancestry['name'],
+                'background' : background['name'],
+                'class' : pClass['name'],
                 'scores' : scores
             };
 
-            sheets.push(toExport);
-        }
+            console.log(toExport);
 
-        
+            const response2 = await fetch('/api/sheets', {
+                method: 'POST',
+                headers: {'content-type': 'application/json'},
+                body: JSON.stringify(toExport),
+              });
+        }
     }
 
 const c = new Creator;

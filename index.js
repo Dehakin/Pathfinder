@@ -7,7 +7,7 @@ app.use(express.json());
 
 app.use(express.static('public'));
 
-const apiRouter = express.Router();
+let apiRouter = express.Router();
 app.use('/api',apiRouter);
 
 apiRouter.get('/sheets', (_req, res) => {
@@ -15,8 +15,8 @@ apiRouter.get('/sheets', (_req, res) => {
 });
 
 apiRouter.post('/sheets', (req, res) => {
-    s = addSheet(req.body, sheets);
-    res.send(s);
+    addSheet(req.body, sheets);
+    res.send(sheets);
 });
 
 //Default page
@@ -30,6 +30,7 @@ app.listen(port, () => {
 });
 
 let sheets = [];
+
 function addSheet (s, sheets) {
     sheets.push(s);
 }

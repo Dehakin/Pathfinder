@@ -87,6 +87,11 @@ form
     margin-bottom:15px;
 }
 
+.charType
+{
+    color : orange;
+}
+
 .abcselector
 {
     margin-bottom : 20px;

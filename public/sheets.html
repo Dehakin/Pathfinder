@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pathfinder HTML</title> 
         <link rel="stylesheet" href="sheets.css" />
         <link
@@ -11,6 +11,7 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
         />
+        <script src="sheets.js"></script>
     </head>
     <body class="bg-dark text-light">
         <header class="container-fluid">
@@ -30,21 +31,27 @@
             <h1>
                 Community Character Sheets
             </h1>
-            <div class="event"><span class="playermadesheet">
-                James
-            </span> created a new <span class="charType">Human Barbarian</span><span class="timeago"> just now!</span>
-            <p>See their sheet<span class="sheetlink"> here</span>!</p>
-            </div>
-            <div class="event"><span class="playermadesheet">
-                Sophia
-            </span> created a new <span class="charType">Human Barbarian</span><span class="timeago"> two days ago!</span>
-            <p>See their sheet<span class="sheetlink"> here</span>!</p>
-            </div>
-            <div class="event"><span class="playermadesheet">
-                A suspicious cow
-            </span> created a new <span class="charType">Orc Fighter</span><span class="timeago"> about a week ago!</span>
-            <p>See their sheet<span class="sheetlink"> here</span>!</p>
-            </div>
+            <div class="pSheets">
+                <!--
+                <div class="event"><span class="playermadesheet">
+                    James
+                </span> created a new <span class="charType">Human Barbarian</span><span class="timeago"> just now!</span>
+                <p>See their sheet<span class="sheetlink"> here</span>!</p>
+                </div>
+                <div class="event"><span class="playermadesheet">
+                    Sophia
+                </span> created a new <span class="charType">Human Barbarian</span><span class="timeago"> two days ago!</span>
+                <p>See their sheet<span class="sheetlink"> here</span>!</p>
+                </div>
+                <div class="event"><span class="playermadesheet">
+                    A suspicious cow
+                </span> created a new <span class="charType">Orc Fighter</span><span class="timeago"> about a week ago!</span>
+                <p>See their sheet<span class="sheetlink"> here</span>!</p>
+                </div>
+                -->
+                <button id="displaybutton" onclick="displaySheets()">Show All Sheets</button>
+                </div>
+                
         </main>
 
         <footer>

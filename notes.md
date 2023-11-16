@@ -49,3 +49,6 @@ Notes for midterm
   - Headings : h1 (first leve) ... h6 (sixth and lowest level)
   - Setting doctype: <!DOCTYPE html> (must be done at top of every HTML doc)
   - Images : <img src="example.jpeg"">
+
+
+From making my service, I saw how useful a service can be. I thought that doing this was unnecessary (it worked just fine before after all!), but having a central location where we can store information to dole out to other pages is extremely useful, and the next phase, the database, should make this even more useful.

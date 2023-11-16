@@ -86,3 +86,9 @@ Implementation of JavaScript allowed me to introduce key elements that allow the
 - **Local Storage** - The home page allows the user to input their username into local storage, which is displayed on the main creator page.
 - **Ability Score Calculation** - After the user modifies one of their character choices, JavaScript automatically recalculates the totals for each ability score and instantly displays it.
 - **Dynamic Images** - Once the user changes their ancestry, the photo representing their character is automatically replaced with an image reflecting their new choice.
+
+  ## Service deliverable
+
+  Adding an Express service behind the scenes allows my startup to pull data from a central location from any page we're on!
+
+- **Centralized Data** - Maintaining an array of all character sheets in my service lets me pull that information to the community sheets page whenever a button is clicked!

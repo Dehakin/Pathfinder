@@ -92,3 +92,9 @@ Implementation of JavaScript allowed me to introduce key elements that allow the
   Adding an Express service behind the scenes allows my startup to pull data from a central location from any page we're on!
 
 - **Centralized Data** - Maintaining an array of all character sheets in my service lets me pull that information to the community sheets page whenever a button is clicked!
+
+ ## Database deliverable
+
+ Adding MongoDB database functionality allows stored data to persist across server shutdowns and allows for off-site data storage
+
+ - **Persistent Data** - Maintaining an off-site database connected to the website allows data to persist at all times–even when the server isn't running. Data added to the datbase persists even after restarting the server.

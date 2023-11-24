@@ -87,7 +87,7 @@ Implementation of JavaScript allowed me to introduce key elements that allow the
 - **Ability Score Calculation** - After the user modifies one of their character choices, JavaScript automatically recalculates the totals for each ability score and instantly displays it.
 - **Dynamic Images** - Once the user changes their ancestry, the photo representing their character is automatically replaced with an image reflecting their new choice.
 
-  ## Service deliverable
+## Service deliverable
 
   Adding an Express service behind the scenes allows my startup to pull data from a central location from any page we're on!
 

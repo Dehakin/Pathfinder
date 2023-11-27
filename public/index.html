@@ -32,11 +32,13 @@
             <h2>Welcome to the Pathfinder's Library!</h2>
             <p class="description">Pathfinder's Library is an easy-to-use tool that allows you to design your own characters for your next TTRPG game!</p>
             <p class="description">Log in to get started, or click "Information" to learn more!</p>
-            <form method="get" action="creator.html">
-                <label for="name">Enter your username:</label>
+            <form method="get">
+                <label for="name">Enter your credentials:</label>
                 <br />
                 <input type="text" id="username" placeholder="username here">
+                <input type="text" id="password" placeholder="password here">
                 <button onclick="login()" type="submit">Login</button>
+                <button onclick="create()" type="submit">Create</button>
             </form>
         </main>
         <footer>

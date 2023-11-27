@@ -193,8 +193,8 @@ class Creator {
         }
         async exportCharacter() {
             
-            const response = await fetch('/api/sheets');
-            const sheets = await response.json();
+            //const response = await fetch('/api/sheets');
+            // const sheets = await response.json();
 
             const ancestry = this.ancestry;
             const background = this.background;
@@ -222,6 +222,7 @@ class Creator {
 
             console.log(toExport);
 
+            // This updates the database, we just don't do anything with response2
             const response2 = await fetch('/api/sheets', {
                 method: 'POST',
                 headers: {'content-type': 'application/json'},

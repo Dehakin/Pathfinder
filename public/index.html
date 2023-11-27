@@ -22,9 +22,6 @@
             <nav class="navbar fixed-middle">
             <menu class="navbar nav">
                     <a class="nav-link" href="index.html">Home</a></li>
-                    <a class="nav-link" href="creator.html">Character Builder</a></li>
-                    <a class="nav-link" href="information.html">Information</a></li>
-                    <a class="nav-link" href="sheets.html">Community Sheets</a></li>
             </menu>
             </nav>
         </header>
@@ -37,9 +34,10 @@
                 <br />
                 <input type="text" id="username" placeholder="username here">
                 <input type="text" id="password" placeholder="password here">
-                <button onclick="login()" type="submit">Login</button>
-                <button onclick="create()" type="submit">Create</button>
+                <button onclick="login()" type="button">Login</button>
+                <button onclick="create()" type="button">Create</button>
             </form>
+            <p id="message" style="color : red"></p>
         </main>
         <footer>
             <span class="name">Zachary Penney</span>

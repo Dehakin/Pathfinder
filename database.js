@@ -33,7 +33,7 @@ function getUserByToken (token) {
 }
 
 function getUserByUsername (name) {
-  return userCollection.findOne({ name: name});
+  return userCollection.findOne({ username: name});
 }
 
 async function createUser(username, password) {

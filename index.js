@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const DB = require('./database.js');
 const cookieParser = require('cookie-parser');
+const bcrypt = require('bcrypt');
 
 const port = process.argv.length > 2 ? process.argv[2] : 3000;
 
@@ -43,7 +44,7 @@ apiRouter.post('/auth/create', async (req, res) => {
 
 // GetAuth token for the provided credentials
 apiRouter.post('/auth/login', async (req, res) => {
-    const user = await DB.getUser(req.body.email);
+    const user = await DB.getUserByUsername(req.body.username);
     if (user) {
       if (await bcrypt.compare(req.body.password, user.password)) {
         setAuthCookie(res, user.token);
@@ -51,6 +52,7 @@ apiRouter.post('/auth/login', async (req, res) => {
         return;
       }
     }
+    console.log("Erroring");
     res.status(401).send({ msg: 'Unauthorized' });
   });
   
@@ -59,7 +61,7 @@ apiRouter.post('/auth/login', async (req, res) => {
     res.status(204).end();
   });
   
-  apiRouter.get('/user/:email', async (req, res) => {
+  apiRouter.get('/user/:username', async (req, res) => {
     const user = await DB.getUser(req.params.username);
     if (user) {
       const token = req?.cookies.token;
@@ -69,7 +71,7 @@ apiRouter.post('/auth/login', async (req, res) => {
     res.status(404).send({ msg: 'Unknown' });
   });
 
-  var secureApiRouter = express.Router();
+var secureApiRouter = express.Router();
 apiRouter.use(secureApiRouter);
 
 secureApiRouter.use(async (req, res, next) => {
@@ -81,10 +83,6 @@ secureApiRouter.use(async (req, res, next) => {
     res.status(401).send({ msg: 'Unauthorized' });
   }
 });
-
-
-
-
 
 //Default page
 app.use((_req, res) => {

@@ -98,3 +98,11 @@ Implementation of JavaScript allowed me to introduce key elements that allow the
  Adding MongoDB database functionality allows stored data to persist across server shutdowns and allows for off-site data storage
 
  - **Persistent Data** - Maintaining an off-site database connected to the website allows data to persist at all times–even when the server isn't running. Data added to the datbase persists even after restarting the server.
+
+## Authentication deliverable
+
+Adding an authentication service allows for users to create and log in to secure account with usernames and passwords they create.   
+
+- **User Information** - The adding of an authetication system allows user information (username and password) to be securely stored in MongoDB for later use.
+- **Information Security** - User passwords are salted then hashed ten times over before being added to ensure maximum security.
+- **Unique Users** - Before a new user is registered, their username is searched for in the database; the new user request is denied if another user with that name is found, ensuring no two users share the same username.

@@ -89,13 +89,13 @@ Implementation of JavaScript allowed me to introduce key elements that allow the
 
 ## Service deliverable
 
-  Adding an Express service behind the scenes allows my startup to pull data from a central location from any page we're on!
+Adding an Express service behind the scenes allows my startup to pull data from a central location from any page we're on!
 
 - **Centralized Data** - Maintaining an array of all character sheets in my service lets me pull that information to the community sheets page whenever a button is clicked!
 
  ## Database deliverable
 
- Adding MongoDB database functionality allows stored data to persist across server shutdowns and allows for off-site data storage
+Adding MongoDB database functionality allows stored data to persist across server shutdowns and allows for off-site data storage
 
  - **Persistent Data** - Maintaining an off-site database connected to the website allows data to persist at all times–even when the server isn't running. Data added to the datbase persists even after restarting the server.
 
@@ -106,3 +106,9 @@ Adding an authentication service allows for users to create and log in to secure
 - **User Information** - The adding of an authetication system allows user information (username and password) to be securely stored in MongoDB for later use.
 - **Information Security** - User passwords are salted then hashed ten times over before being added to ensure maximum security.
 - **Unique Users** - Before a new user is registered, their username is searched for in the database; the new user request is denied if another user with that name is found, ensuring no two users share the same username.
+
+## WebSocket deliverable
+
+Including WebSocket functionality allows the server and each user to receive information about other users.
+
+ - **Login Notifications** - When a user is on the login screen, they will be notified if another user logs in.

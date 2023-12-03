@@ -102,6 +102,7 @@ class Creator {
     wisdom;
     charisma;
 
+
     constructor() {
         this.ancestry = ancestryData["Human"];
         this.background = backgroundData["Artisan"];
@@ -211,6 +212,7 @@ class Creator {
         
 
             const username = localStorage.getItem('username');
+            const characterDescription = this.ancestry.name + " " + this.pClass.name;
 
             const toExport = { 
                 'username' : username,
@@ -227,7 +229,7 @@ class Creator {
                 method: 'POST',
                 headers: {'content-type': 'application/json'},
                 body: JSON.stringify(toExport),
-              });
+              });      
         }
     }
 

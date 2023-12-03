@@ -3,6 +3,8 @@ const app = express();
 const DB = require('./database.js');
 const cookieParser = require('cookie-parser');
 const bcrypt = require('bcrypt');
+const { WebSocketServer } = require('ws');
+const uuid = require('uuid');
 
 const port = process.argv.length > 2 ? process.argv[2] : 3000;
 
@@ -13,6 +15,8 @@ app.use(express.json());
 app.use(express.static('public'));
 
 app.use(cookieParser());
+
+app.set('trust proxy', true);
 
 let apiRouter = express.Router();
 app.use('/api',apiRouter);
@@ -98,7 +102,60 @@ function setAuthCookie(res, authToken) {
 }
 
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 });
 
+// Websocket stuff
+
+const wss = new WebSocketServer({ noServer : true });
+
+server.on('upgrade', (request, socket, head) => {
+  wss.handleUpgrade(request, socket, head, function done(ws) {
+    wss.emit('connection', ws, request);
+  });
+});
+
+let connections = [];
+
+wss.on('connection', (ws) => {
+  const connection = {
+    id: uuid.v4(),
+    alive : true,
+    ws : ws
+  };
+  connections.push(connection);
+
+  ws.on('message', function message(data) {
+    connections.forEach((c) => {
+      if (c.id !== connection.id) {
+        c.ws.send(data);
+      }
+    });
+  });
+
+  ws.on('close', () => {
+    connections.findIndex((o, i) => {
+      if (o.id === connection.id) {
+        connections.splice(i, 1);
+        return true;
+      }
+    });
+  });
+
+  ws.on('pong', () => {
+    connection.alive = true;
+  });
+});
+
+setInterval (() => {
+  connections.forEach((c) => {
+    // Kill any connection that didn't respond to the ping last time
+    if (!c.alive) {
+      c.ws.terminate();
+    } else {
+      c.alive = false;
+      c.ws.ping();
+    }
+  });
+}, 10000);

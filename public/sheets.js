@@ -110,9 +110,6 @@ async function displaySheets() {
         exclamationEl.textContent = "!";
         seeEl.appendChild(exclamationEl);
 
-
-        
-
         playerSheetsElement.appendChild(eventEl);
     }
 

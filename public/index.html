@@ -12,7 +12,7 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
         />
-        <script src="home.js"></script>
+        <script src="home.js" defer></script>
     </head>
     <body class="bg-dark text-light">
         <header class="container-fluid">
@@ -37,7 +37,8 @@
                 <button onclick="login()" type="button">Login</button>
                 <button onclick="create()" type="button">Create</button>
             </form>
-            <p id="message" style="color : red"></p>
+            <div id="messageLog" style="color : lightblue"> </div>
+            <div id="message" style="color : red"></div>
         </main>
         <footer>
             <span class="name">Zachary Penney</span>

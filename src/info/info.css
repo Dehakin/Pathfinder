@@ -1,4 +1,4 @@
-body
+div
 {
     display : flex;
     flex-direction: column;
@@ -72,26 +72,6 @@ form
     margin-bottom : 20px;
 }
 
-footer
-{
-    width: 100%;
-    bottom : 0;
-    background : maroon;
-    position : fixed;
-}
-
-footer span
-{
-    float: left;
-    margin-left:10px;
-    border : white thin !important;
-}
-
-footer a 
-{
-    float : right;
-    margin-right : 10px;
-}
 
 @media (max-height: 600px) {
     footer {

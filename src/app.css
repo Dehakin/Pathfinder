@@ -1,13 +1,13 @@
-.body
+*
+{
+    background: rgb(33, 36, 40);
+}
+
+.router
 {
     display : flex;
     flex-direction: column;
-}
-
-header h1
-{
     text-align : center;
-    padding-top:50px;
 }
 
 menu
@@ -18,7 +18,7 @@ menu
     margin-top : 0;
 }
 
-menu a
+menu .nav-link
 {
     display:inline-block !important;
     justify-content:space-between !important;
@@ -29,18 +29,23 @@ menu a
     text-align : center;
 }
 
-main h2
+/*
+menu
 {
-    padding-bottom: 20px;
+    display:inline-block !important;
+    justify-content:space-between !important;
+    color : hsl(360, 100%, 60%, 1) !important;
+    border : darkgray solid;
+    border-radius: 10px;
+    background: turquoise;
+    text-align : center;
 }
 
-form
+menu .nav-link
 {
-    padding-top: 10px;
-    padding-bottom:10px;
-    background : darkgray;
-}
 
+}
+*/
 footer
 {
     width: 100%;
@@ -49,17 +54,27 @@ footer
     position : fixed;
 }
 
-footer span
+.name
 {
     float: left;
     margin-left:10px;
     border : white thin !important;
 }
 
-footer a 
+span a 
 {
     float : right;
     margin-right : 10px;
+}
+
+.username
+{
+    position :absolute;
+    margin-top : -60px;
+    margin-left: 30px;
+    text-align : center;
+    color : lightblue;
+    font-size: 25px;
 }
 
 @media (max-height: 600px) {

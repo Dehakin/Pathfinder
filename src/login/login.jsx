@@ -1,4 +1,5 @@
 import React from 'react';
+import './login.css';
 
 export function Login() {
     return (
@@ -7,12 +8,12 @@ export function Login() {
             <p className="description">Pathfinder's Library is an easy-to-use tool that allows you to design your own characters for your next TTRPG game!</p>
             <p className="description">Log in to get started, or click "Information" to learn more!</p>
             <form method="get">
-                <label htmlFor="name">Enter your credentials:</label>
+                <label className="instructions" htmlFor="name">Enter your credentials:</label>
                 <br />
-                <input type="text" id="username" placeholder="username here" />
-                <input type="text" id="password" placeholder="password here" />
-                <button type="button">Login</button>
-                <button type="button">Create</button>
+                <input type="text" className="usernameinput" placeholder="username here" />
+                <input type="text" className="passwordinput" placeholder="password here" />
+                <button className="loginbutton" type="button">Login</button>
+                <button className="createbutton" type="button">Create</button>
             </form>
             <div id="messageLog"> </div>
             <div id="message"></div>

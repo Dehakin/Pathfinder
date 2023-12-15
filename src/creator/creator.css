@@ -1,0 +1,59 @@
+.outer
+{
+    flex-direction: column;
+    text-align: left;
+}
+
+.attributeDisplay
+{
+    text-align: left;
+    flex-direction : column;
+    margin-top: 10px;
+}
+
+.abcselector
+{
+    background : white;
+    margin-right: 1120px;
+}
+
+.portrait
+{
+    float : right;
+    width: 150px;
+}
+
+
+form
+{
+    padding-top: 10px;
+    padding-bottom:10px;
+    background : darkgray;
+}
+
+.abctitle
+{
+    margin-bottom:15px;
+}
+
+.abcselector
+{
+    margin-bottom : 20px;
+}
+
+#postbutton
+{
+    background: white;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+
+@media (max-height: 600px) {
+    footer {
+      display: none;
+    }
+    main {
+      flex: 1 100vh;
+    }
+}

@@ -59,6 +59,14 @@ footer
     float: left;
     margin-left:10px;
     border : white thin !important;
+    background: maroon;
+}
+
+.repo
+{
+    float : right;
+    margin-right : 10px;
+    background: maroon;
 }
 
 span a 

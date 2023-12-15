@@ -18,17 +18,16 @@ function App() {
                 </h1>
                 <nav className="navbar fixed-middle">
                     <menu className="navbar nav">
-                            <NavLink className="nav-link" to="/login">Login</NavLink>
-                            <NavLink className="nav-link" to="/creator">Character Creator</NavLink>
-                            <NavLink className="nav-link" to="/sheets">Community Sheets</NavLink>
-                            <NavLink className="nav-link" to="/info">Info</NavLink>
+                            <NavLink className="nav-link" to="login">Login</NavLink>
+                            <NavLink className="nav-link" to="creator">Character Creator</NavLink>
+                            <NavLink className="nav-link" to="sheets">Community Sheets</NavLink>
+                            <NavLink className="nav-link" to="info">Info</NavLink>
                     </menu>
                 </nav>
             </header>
-
             <main>
                 <Routes>
-                    <Route path='/' element={<Login />} exact />
+                    <Route path='/' element={<Login />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/creator' element={<Creator />} />
                     <Route path='/sheets' element={<Sheets />} />
@@ -39,7 +38,7 @@ function App() {
 
             <footer>
                 <span className="name">Zachary Penney</span>
-                    <NavLink to="https://github.com/Dehakin/pathfinder260.git" className="nav-link" >
+                    <NavLink to="https://github.com/Dehakin/pathfinder260.git" className="repo" >
                         GitHub Repository
                     </NavLink>
             </footer>

@@ -112,3 +112,11 @@ Adding an authentication service allows for users to create and log in to secure
 Including WebSocket functionality allows the server and each user to receive information about other users.
 
  - **Login Notifications** - When a user is on the login screen, they will be notified if another user logs in.
+
+
+## React deliverable
+
+Conversion to the React framework allows for the webpage's DOM to be dynamically altered to "react" to user input, avoiding the need for entire webpages to be loaded. Parts of the page that stay the same (a navigation bar, for instance) are left unaltered instead of reloaded when information on the page is changed.
+
+ - **Dynamic Changes** - On navigation, the webpage dynamically alters the DOM to remove and add pertinent information, avoiding unneccessary reloading.
+ - **JSX** - React's use of JSX, a mixture of HTML and JavaScript, requires less files than conventional websites and makes information more compact and easier to understand from a programming perspective.
